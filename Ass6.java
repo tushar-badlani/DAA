@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Ass6{
+public class Ass6{
 
     static int minCost = 1000;
     static int[] best;
