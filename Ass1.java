@@ -35,9 +35,9 @@ class Ass1{
         BigInteger R2 = calculateSquare(R);
 
         BigInteger LR = L.multiply(R).multiply(BigInteger.TWO);
-        BigInteger LR = L.multiply(R).multiply(BigInteger.valueOf(2));
+        // BigInteger LR = L.multiply(R).multiply(BigInteger.valueOf(2));
 
-        BigInteger ans = L2.multiply(BigInteger.TEN.pow(2*(length-mid))).add(L.multiply(R).multiply(BigInteger.TEN.pow(length-mid)).multiply(BigInteger.valueOf(2))).add(R2);
+        BigInteger ans = L2.multiply(BigInteger.TEN.pow(2*(length-mid))).add(LR.multiply(BigInteger.TEN.pow(length-mid))).add(R2);
         return ans;
     }
 }
